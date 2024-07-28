@@ -15,11 +15,6 @@ html {
     scroll-behavior: smooth;
 }
 
-p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color : #333;
-}
 
 a, .button {
     transition: all 0.3s ease;
@@ -190,16 +185,15 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
+    padding-top: 10vh;
     background-color: #f4f4f4;
-    padding: 0 2rem;
 }
 
 .section_pic-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
 }
 
 .profile-pic {
@@ -259,4 +253,69 @@ a:hover {
     background-color: #f4f4f4;
     gap: 1rem;
     margin-left: 2rem;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-details-container {
+    justify-content: space-around;
+    width: 65rem;
+}
+
+.about-container {
+    display: flex;
+    gap: 1.3rem;
+    padding: 0.5rem;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20rem;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+    gap: 0.2rem;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.about-items {
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.about__text {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+}
+
+.arrow {
+    color: #333;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    align-self: flex-end;
 }
