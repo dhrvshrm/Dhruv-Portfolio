@@ -1,96 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dhruv Sharma | Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mediaQueries.css" />
-  </head>
 
-  <body>
-    <nav class="navbar" id="desktop-nav">
-      <div class="logo">@dhrvshrm</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhruv Sharma | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mediaQueries.css" />
+</head>
+
+<body>
+  <nav class="navbar" id="desktop-nav">
+    <div class="logo">@dhrvshrm</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger">
+    <div class="logo">Dhruv Sharma</div>
+    <div class="ham-menu">
+      <div class="ham-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <nav id="hamburger">
-      <div class="logo">Dhruv Sharma</div>
-      <div class="ham-menu">
-        <div class="ham-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
-    </nav>
-    <section id="profile">
-      <div class="section_pic-container">
-        <img src="/assets/dhruv.jpg" alt="profile" class="profile-pic" />
-      </div>
-      <div class="hero-container">
-        <div class="section_text">
-          <p class="section__text__p1">Hello there!👋</p>
-          <p class="title">
-            I am <span style="font-weight: 500">Dhruv Sharma</span>
-          </p>
-          <p class="section__test __p2">Full Stack Developer</p>
-        </div>
-        <div class="btn-container">
-          <button class="btn-2" onclick="window.open('./assets/sample.pdf')">
-            Download CV
-          </button>
-          <button class="btn-1" onclick="window.location.href='#contact'">
-            Contact Me
-          </button>
-        </div>
-        <div class="social-icons">
-          <a href="https://github.com/dhrvshrm/" target="_blank">
-            <img src="./assets/github.png" class="social-icon" alt="github" />
-          </a>
-          <a href="https://www.linkedin.com/in/dhrv-shrm/" target="_blank">
-            <img
-              src="./assets/linkedin.png"
-              class="social-icon"
-              alt="linkedin"
-            />
-          </a>
-          <a href="https://x.com/dhrvshrm08" target="_blank">
-            <img src="./assets/twitter.png" class="social-icon" alt="twitter" />
-          </a>
-          <a href="https://medium.com/@dhr8v" target="_blank">
-            <img src="./assets/medium.png" class="social-icon" alt="medium" />
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="about">
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="/assets/dhruv.jpg" alt="profile" class="profile-pic" />
+    </div>
+    <div class="hero-container">
       <div class="section_text">
-        <p class="title">Who am I?</p>
-        <div>
-          <div class="about-details-container">
-            <div class="about-container">
-              <p class="about__text">
-                I am a Full Stack Developer with 1.5+ years of experience in
-                building web applications. I have a Bachelor's degree in
-                Computer Science Engineering from ICFAI University, Jaipur. I
-                have worked on various projects using technologies like React,
-                Node.js, Express.js, MongoDB, Python, AWS and more. I am
-                passionate about building scalable and efficient applications.    
-              </p>
-              <div class="about-items">
+        <p class="section__text__p1">Hello there!👋</p>
+        <p class="title">
+          I am <span style="font-weight: 500">Dhruv Sharma</span>
+        </p>
+        <p class="section__test __p2">Full Stack Developer</p>
+      </div>
+      <div class="btn-container">
+        <button class="btn-2" onclick="window.open('./assets/sample.pdf')">
+          Download CV
+        </button>
+        <button class="btn-1" onclick="window.location.href='#contact'">
+          Contact Me
+        </button>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/dhrvshrm/" target="_blank">
+          <img src="./assets/github.png" class="social-icon" alt="github" />
+        </a>
+        <a href="https://www.linkedin.com/in/dhrv-shrm/" target="_blank">
+          <img src="./assets/linkedin.png" class="social-icon" alt="linkedin" />
+        </a>
+        <a href="https://x.com/dhrvshrm08" target="_blank">
+          <img src="./assets/twitter.png" class="social-icon" alt="twitter" />
+        </a>
+        <a href="https://medium.com/@dhr8v" target="_blank">
+          <img src="./assets/medium.png" class="social-icon" alt="medium" />
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="section_text">
+      <p class="title">Who am I?</p>
+      <div>
+        <div class="about-details-container">
+          <div class="about-container">
+            <p class="about__text">
+              I am a Full Stack Developer with 1.5+ years of experience in
+              building web applications. I have a Bachelor's degree in
+              Computer Science Engineering from ICFAI University, Jaipur. I
+              have worked on various projects using technologies like React,
+              Node.js, Express.js, MongoDB, Python, AWS and more. I am
+              passionate about building scalable and efficient applications.
+            </p>
+            <div class="about-items">
               <div class="details-container">
                 <img src="./assets/portfolio.png" alt="edu" class="icon" />
                 <h3>Experience</h3>
@@ -111,15 +108,28 @@
                 <p>Jaipur, Rajasthan</p>
                 </p>
               </div>
-              </div>
             </div>
           </div>
-
         </div>
-        <img src="./assets/arrow.png" alt="arrow" class="arrow" onclick="arrowClick()" />
-      </div>
-    </section>
-        <script src="script.js"></script>
-  </body>
-</html>
 
+      </div>
+      <img src="./assets/arrow.png" alt="arrow" class="arrow" onclick="arrowClick()" />
+    </div>
+  </section>
+  <section id="about">
+    <div class="section_text">
+      <p class="title">Experience</p>
+      <div style="display: flex; justify-content: space-between;">
+        <p>
+          1.5+ years of experience in building web applications.
+        </p>
+        <div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
