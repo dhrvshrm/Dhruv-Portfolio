@@ -341,7 +341,7 @@ a:hover {
     padding: 2rem;
     gap: 1rem;
     margin-bottom: 2rem;
-    width: 90rem;
+    width: 80rem;
     flex-wrap: wrap;
 }
 
@@ -352,7 +352,7 @@ a:hover {
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 40rem;
+    width: 35rem;
     align-items: center;
     font-size: 1rem;
     text-align: center;
