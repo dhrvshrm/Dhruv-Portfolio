@@ -621,7 +621,6 @@ a:hover {
     height: 100px;
     object-fit: cover;
     border-radius: 10px;
-    border:  1px solid #333;
 }
 
 .project-title {
@@ -692,6 +691,7 @@ a:hover {
 
     .project-desc {
         font-size: 1rem;
+        width: 95%;
     }
 
     .btn-3 {
