@@ -18,12 +18,14 @@ html {
 }
 
 
-a, .button {
+a,
+.button {
     transition: all 0.3s ease;
 }
 
 
-nav, .nav-links {
+nav,
+.nav-links {
     display: flex;
 }
 
@@ -187,7 +189,7 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height:75vh;
+    height: 75vh;
     padding-top: 10vh;
     background-color: #f4f4f4;
 }
@@ -295,10 +297,10 @@ a:hover {
 }
 
 .details-container:hover {
-    transform:  translateY(-5px);
+    transform: translateY(-5px);
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .icon {
@@ -308,9 +310,9 @@ a:hover {
 }
 
 .about-items {
-    display: flex; 
+    display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
     margin-top: 0.5rem;
 }
@@ -526,7 +528,7 @@ a:hover {
         justify-content: space-between;
         align-items: center;
         height:
-        24px;
+            24px;
         width: 30px;
         cursor: pointer;
         flex-direction: column;
@@ -553,7 +555,7 @@ a:hover {
     .skills__items p {
         padding: 0.5rem 0.5rem;
     }
-    
+
 }
 
 @media screen and (max-width: 768px) {
@@ -597,7 +599,7 @@ a:hover {
         font-size: 1rem;
     }
 }
- 
+
 .project {
     display: flex;
     padding: 1.25rem;
@@ -633,7 +635,7 @@ a:hover {
     font-size: 1rem;
     color: #333;
     margin-top: 0.5rem;
-    width : 25rem
+    width: 25rem
 }
 
 .btn-3 {
@@ -707,5 +709,20 @@ a:hover {
     }
 
 }
+ 
 
+.section__text__p1 {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
+@media screen and (max-width: 768px) {
+    .section__text__p1 {
+        font-size: 1rem;
+        padding: 0 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
