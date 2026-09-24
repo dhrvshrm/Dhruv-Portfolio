@@ -17,6 +17,7 @@
         <li><a href="#profile">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -33,6 +34,7 @@
         <li><a href="#profile" onclick="toggleMenu()">About</a></li>
         <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#education" onclick="toggleMenu()">Education</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
       </div>
     </div>
@@ -51,7 +53,7 @@
       </div>
       <div class="btn-container">
         <button class="btn-2"
-          onclick="window.open('https://drive.google.com/drive/folders/111gz5RoeYMk8Z-RX__oBkSZ8OyBGjH2d?usp=drive_link', '_blank')">
+          onclick="window.open('./assets/sample.pdf', '_blank')">
           Download CV
         </button>
         <button class="btn-1" onclick="window.location.href='#contact'">
@@ -69,11 +71,10 @@
         <div class="about-details-container">
           <div class="about-container">
             <p class="about__text">
-              Software Developer with 2+ years of experience specializing in scalable frontend architectures, RESTful
-              APIs, and cloud-native deployments. Proficient in NextJS, ReactJS, JavaScript, Python, and AWS. Currently
-              a Software Developer at Team Geek Solutions. Holds a Bachelor of Technology in Computer Science &
-              Engineering from ICFAI University.
-
+              Software Developer with 3+ years building and scaling production AI systems end to end. Experience
+              spanning agentic voice AI, LLM evaluation pipelines with OpenAI and Anthropic, and serverless
+              architecture on AWS, alongside React and TypeScript frontends and Python backend services. Focused on
+              making AI systems auditable, cost efficient, and reliable in production.
             </p>
           </div>
         </div>
@@ -84,17 +85,62 @@
     <div class="section_text">
       <p class="title">Skills</p>
       <div style="display: flex; justify-content: space-between;">
-        <div class="skills-container">
+        <div class="skills-container skills-grid">
           <div class="skills">
+            <p class="skills__title">Languages</p>
             <div class="skills__items">
-              <p>HTML5</p>
-              <p>CSS3</p>
+              <p>HTML</p>
+              <p>CSS</p>
               <p>JavaScript</p>
               <p>TypeScript</p>
               <p>Python</p>
+            </div>
+          </div>
+          <div class="skills">
+            <p class="skills__title">Frontend</p>
+            <div class="skills__items">
               <p>ReactJS</p>
+              <p>MUI</p>
               <p>NextJS</p>
-              <p>AWS</p>
+              <p>Redux Toolkit</p>
+              <p>Zustand</p>
+              <p>React Query</p>
+            </div>
+          </div>
+          <div class="skills">
+            <p class="skills__title">Backend &amp; Databases</p>
+            <div class="skills__items">
+              <p>FastAPI</p>
+              <p>MongoDB</p>
+              <p>SQL</p>
+            </div>
+          </div>
+          <div class="skills">
+            <p class="skills__title">DevOps &amp; Cloud</p>
+            <div class="skills__items">
+              <p>Docker</p>
+              <p>AWS Lambda</p>
+              <p>API Gateway</p>
+              <p>EC2</p>
+              <p>S3</p>
+              <p>CodePipeline</p>
+            </div>
+          </div>
+          <div class="skills">
+            <p class="skills__title">Tools</p>
+            <div class="skills__items">
+              <p>Git</p>
+              <p>Webpack</p>
+            </div>
+          </div>
+          <div class="skills">
+            <p class="skills__title">AI &amp; LLM Engineering</p>
+            <div class="skills__items">
+              <p>OpenAI &amp; Anthropic APIs</p>
+              <p>Agentic Workflows</p>
+              <p>LLM Evaluation &amp; Guardrails</p>
+              <p>Prompt Engineering</p>
+              <p>Voice AI (Whisper)</p>
             </div>
           </div>
         </div>
@@ -130,6 +176,23 @@
       <div style="display: flex; justify-content: space-between;">
         <div class="skills-container">
           <div class="project">
+            <img src="https://picsum.photos/200/300" alt="Fitmind AI" class="project-img" />
+            <div class="project-details">
+              <p class="project-title">Fitmind AI</p>
+              <p class="project-desc">
+                A voice-first fitness coach combining speech transcription, mood/energy analysis, and generative AI to
+                produce daily-adaptive workout plans, real-time streaming chat coaching, and automated weekly recaps.
+              </p>
+              <p class="project-tech">React, TS, MUI, Zustand, React Query, FastAPI, MongoDB, Gemini &amp; Groq (LLM +
+                Whisper)</p>
+              <button class="btn-3" onclick="window.open('https://fitmind-ai-lyart.vercel.app/')">View
+                Project</button>
+              <button class="btn-4" onclick="window.open('https://github.com/dhrvshrm/fitmind-ai')">View
+                Code</button>
+            </div>
+          </div>
+
+          <div class="project">
             <img src="https://picsum.photos/200/300" alt="project3" class="project-img" />
             <div class="project-details">
               <p class="project-title">Workbook XLS</p>
@@ -160,11 +223,13 @@
           <div class="project">
             <img src="https://picsum.photos/200/300" alt="project3" class="project-img" />
             <div class="project-details">
-              <p class="project-title">FakeBook</p>
+              <p class="project-title">FakeBook – Social Media Application</p>
               <p class="project-desc">
-                Built a platform where users can share posts, comment, and connect with others. It has features like
-                notifications and search.
+                Implemented secure user auth &amp; friend management features, enabling easy connections &amp;
+                interactions through personalized profiles and timeline pages for sharing posts &amp; engaging with
+                likes/comments.
               </p>
+              <p class="project-tech">JavaScript, HTML, CSS, React, MUI, Node, Express, MongoDB</p>
               <button class="btn-4" onclick="window.open('https://www.github.com/dhrvshrm/FakeBook')">View Code</button>
 
             </div>
@@ -188,6 +253,25 @@
       </div>
     </div>
   </section>
+  <section id="education">
+    <div class="section_text">
+      <p class="title">Education</p>
+      <div class="experience-container">
+        <div class="experience">
+          <div class="experience-header">
+            <div>
+              <p class="experience-role">Bachelor of Technology – CSE</p>
+              <p class="experience-company">IcfaiTech, The ICFAI University · Jaipur, Rajasthan</p>
+            </div>
+            <p class="experience-date">Aug 2019 – May 2023</p>
+          </div>
+          <ul class="experience-points">
+            <li>CGPA – 8.45/10</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="contact">
     <div class="section_text">
       <div>
@@ -195,8 +279,8 @@
         <div style="width: 100%; align-items: center; display: flex; justify-content: center; margin-bottom: 2rem;">
           <div class="details-container">
             <p>
-              <a href="mailto:dhruv@gmail.com" class="email" target="_blank" rel="noopener noreferrer">
-                shrmdhruv11@gmail.com
+              <a href="mailto:shrmadhruv11@gmail.com" class="email" target="_blank" rel="noopener noreferrer">
+                shrmadhruv11@gmail.com
               </a>
             <div class="social-icons">
               <a href="https://github.com/dhrvshrm/" target="_blank">

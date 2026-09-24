@@ -723,3 +723,116 @@ a:hover {
         margin-bottom: 2rem;
     }
 }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+}
+
+.skills__title {
+    font-weight: 600;
+}
+
+.project-tech {
+    font-size: 0.85rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 0.5rem;
+    width: 25rem;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    width: 65rem;
+}
+
+.experience {
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.experience-role {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.experience-company {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.experience-date {
+    font-size: 0.95rem;
+    color: #f1356d;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.experience-points {
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills-grid {
+        display: flex;
+    }
+
+    .project-tech {
+        width: 95%;
+    }
+
+    .experience-container {
+        width: 90%;
+        padding: 1rem 0;
+    }
+
+    .experience {
+        padding: 1rem;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .experience-role {
+        font-size: 1.05rem;
+    }
+
+    .experience-points {
+        font-size: 0.85rem;
+    }
+}
