@@ -1,249 +1,464 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhruv Sharma | Software Developer</title>
+    <meta
+      name="description"
+      content="Dhruv Sharma, Software Developer building production AI systems: agentic voice AI, LLM evaluation pipelines, serverless AWS, React and TypeScript."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dhruv Sharma | Software Developer</title>
-  <meta name="description"
-    content="Dhruv Sharma, Software Developer building production AI systems: agentic voice AI, LLM evaluation pipelines, serverless AWS, React and TypeScript." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <a href="#top" class="logo">Dhruv Sharma</a>
+        <button
+          class="ham-icon"
+          aria-label="Toggle menu"
+          onclick="toggleMenu()"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="#top" class="logo">Dhruv Sharma</a>
-      <button class="ham-icon" aria-label="Toggle menu" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about" onclick="closeMenu()">About</a></li>
-          <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
-          <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <main id="top">
+      <section class="hero container">
+        <img src="./assets/dhruv.jpg" alt="Dhruv Sharma" class="profile-pic" />
+        <div>
+          <p class="eyebrow">Software Developer · Ajmer, Rajasthan</p>
+          <h1>Hi, I'm Dhruv Sharma.</h1>
+          <p class="hero-text">
+            I build and scale production AI systems end to end: agentic voice
+            AI, LLM evaluation pipelines and serverless backends on AWS, with
+            React and TypeScript frontends.
+          </p>
+          <div class="btn-row">
+            <a
+              class="btn btn-primary"
+              href="./assets/Dhruv_Sharma_Resume.pdf"
+              target="_blank"
+              rel="noopener"
+              >Download CV</a
+            >
+            <a class="btn btn-outline" href="mailto:shrmadhruv11@gmail.com"
+              >Get in touch</a
+            >
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/dhrvshrm/"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/dhrv-shrm/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+            <a href="https://medium.com/@dhr8v" target="_blank" rel="noopener"
+              >Medium</a
+            >
+            <a href="https://x.com/dhrvshrm08" target="_blank" rel="noopener"
+              >X</a
+            >
+          </div>
+        </div>
+      </section>
 
-  <main id="top">
-    <section class="hero container">
-      <img src="./assets/dhruv.jpg" alt="Dhruv Sharma" class="profile-pic" />
-      <div>
-        <p class="eyebrow">Software Developer · Ajmer, Rajasthan</p>
-        <h1>Hi, I'm Dhruv Sharma.</h1>
-        <p class="hero-text">
-          I build and scale production AI systems end to end: agentic voice AI, LLM evaluation pipelines and
-          serverless backends on AWS, with React and TypeScript frontends.
+      <section id="about" class="section container">
+        <h2>About</h2>
+        <p class="lead">
+          I'm a Software Developer with 3+ years of experience shipping AI
+          products to production. I work across the stack, from React and
+          TypeScript frontends to Python services and serverless AWS, and I care
+          about making AI systems reliable, auditable and cost efficient.
         </p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="./assets/Dhruv_Sharma_Resume.pdf" target="_blank" rel="noopener">Download
-            CV</a>
-          <a class="btn btn-outline" href="mailto:shrmadhruv11@gmail.com">Get in touch</a>
-        </div>
-        <div class="social-links">
-          <a href="https://github.com/dhrvshrm/" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.linkedin.com/in/dhrv-shrm/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://medium.com/@dhr8v" target="_blank" rel="noopener">Medium</a>
-          <a href="https://x.com/dhrvshrm08" target="_blank" rel="noopener">X</a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="section container">
-      <h2>About</h2>
-      <p class="lead">
-        I'm a Software Developer with 3+ years of experience shipping AI products to production. I work across the
-        stack, from React and TypeScript frontends to Python services and serverless AWS, and I care about making
-        AI systems reliable, auditable and cost efficient.
-      </p>
-    </section>
+      <section id="experience" class="section container">
+        <h2>Experience</h2>
 
-    <section id="experience" class="section container">
-      <h2>Experience</h2>
-
-      <article class="job">
-        <div class="job-head">
-          <div>
-            <h3>Software Developer</h3>
-            <p class="job-org">Team Geek Solutions · Remote</p>
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <h3>Software Developer</h3>
+              <p class="job-org">Team Geek Solutions · Remote</p>
+            </div>
+            <p class="job-date">Jul 2023 – Present</p>
           </div>
-          <p class="job-date">Jul 2023 – Present</p>
-        </div>
-        <ul class="job-points">
-          <li>Core engineer on an AI recruitment product, owning architecture across 5 frontend apps and 200+ AWS
-            Lambda functions.</li>
-          <li>Built an agentic voice AI platform that runs 800+ screening calls a week.</li>
-          <li>Built LLM evaluation and AI proctoring systems with OpenAI and Anthropic Claude.</li>
-        </ul>
-      </article>
-
-      <article class="job">
-        <div class="job-head">
-          <div>
-            <h3>Technical Intern</h3>
-            <p class="job-org">Team Geek Solutions · Remote</p>
-          </div>
-          <p class="job-date">Jan 2023 – Jul 2023</p>
-        </div>
-        <ul class="job-points">
-          <li>Built React UIs, a shared component library and micro-frontends with Webpack Module Federation.</li>
-          <li>Wrote serverless backend functions with AWS Lambda and API Gateway.</li>
-        </ul>
-      </article>
-
-      <article class="job">
-        <div class="job-head">
-          <div>
-            <h3>Web Development Intern</h3>
-            <p class="job-org">Samagra Foundation · Remote</p>
-          </div>
-          <p class="job-date">Jun 2021 – Aug 2021</p>
-        </div>
-        <ul class="job-points">
-          <li>Built an internship portal and led a team of 5 interns on the front end.</li>
-        </ul>
-      </article>
-
-      <p class="resume-note">Full details are in my <a href="./assets/Dhruv_Sharma_Resume.pdf" target="_blank"
-          rel="noopener">resume ↗</a></p>
-    </section>
-
-    <section id="skills" class="section container">
-      <h2>Skills</h2>
-      <dl class="skills">
-        <div>
-          <dt>Languages</dt>
-          <dd>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/html5/html5-original.svg" alt="" />HTML</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/css3/css3-original.svg" alt="" />CSS</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/javascript/javascript-original.svg" alt="" />JavaScript</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/typescript/typescript-original.svg" alt="" />TypeScript</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/python/python-original.svg" alt="" />Python</span>
-          </dd>
-        </div>
-        <div>
-          <dt>Frontend</dt>
-          <dd>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/react/react-original.svg" alt="" />React</span>
-            <span><img class="mono" src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/nextjs/nextjs-original.svg" alt="" />Next.js</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/materialui/materialui-original.svg" alt="" />MUI</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/redux/redux-original.svg" alt="" />Redux Toolkit</span>
-            <span><img class="mono" src="https://cdn.jsdelivr.net/npm/simple-icons@16.33.0/icons/reactquery.svg" alt="" />React Query</span>
-            <span>Zustand</span>
-          </dd>
-        </div>
-        <div>
-          <dt>Backend &amp; Databases</dt>
-          <dd>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/fastapi/fastapi-original.svg" alt="" />FastAPI</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/mongodb/mongodb-original.svg" alt="" />MongoDB</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/mysql/mysql-original.svg" alt="" />SQL</span>
-          </dd>
-        </div>
-        <div>
-          <dt>Cloud &amp; DevOps</dt>
-          <dd>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/docker/docker-original.svg" alt="" />Docker</span>
-            <span><img class="mono" src="https://cdn.jsdelivr.net/npm/simple-icons@16.33.0/icons/awslambda.svg" alt="" />AWS Lambda</span>
-            <span><img class="mono" src="https://cdn.jsdelivr.net/npm/simple-icons@16.33.0/icons/amazonapigateway.svg" alt="" />API Gateway</span>
-            <span><img class="mono" src="https://cdn.jsdelivr.net/npm/simple-icons@16.33.0/icons/amazonec2.svg" alt="" />EC2</span>
-            <span><img class="mono" src="https://cdn.jsdelivr.net/npm/simple-icons@16.33.0/icons/amazons3.svg" alt="" />S3</span>
-            <span><img class="mono" src="https://cdn.jsdelivr.net/npm/simple-icons@16.33.0/icons/amazoncloudwatch.svg" alt="" />CloudWatch</span>
-          </dd>
-        </div>
-        <div>
-          <dt>AI &amp; LLMs</dt>
-          <dd>
-            <span><img class="mono" src="https://cdn.jsdelivr.net/npm/simple-icons@16.33.0/icons/openai.svg" alt="" />OpenAI</span>
-            <span><img class="mono" src="https://cdn.jsdelivr.net/npm/simple-icons@16.33.0/icons/anthropic.svg" alt="" />Anthropic Claude</span>
-            <span>Voice AI</span>
-            <span>LLM Evaluation</span>
-          </dd>
-        </div>
-        <div>
-          <dt>Tools</dt>
-          <dd>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/git/git-original.svg" alt="" />Git</span>
-            <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/webpack/webpack-original.svg" alt="" />Webpack</span>
-          </dd>
-        </div>
-      </dl>
-    </section>
-
-    <section id="projects" class="section container">
-      <h2>Projects</h2>
-      <div class="projects">
-        <article class="card">
-          <div class="card-head">
-            <h3>Fitmind AI</h3>
-            <span class="card-date">Aug 2026</span>
-          </div>
-          <p>A voice-first AI fitness coach that turns your mood and energy into a daily workout plan, with live chat
-            coaching and weekly recaps.</p>
-          <p class="tech">React · TypeScript · FastAPI · MongoDB · Gemini · Groq</p>
-          <div class="card-links">
-            <a href="https://fitmind-ai-lyart.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
-            <a href="https://github.com/dhrvshrm/fitmind-ai" target="_blank" rel="noopener">Code ↗</a>
-          </div>
+          <ul class="job-points">
+            <li>
+              Core engineer on an AI recruitment product, owning architecture
+              across 5 frontend apps and 200+ AWS Lambda functions.
+            </li>
+            <li>
+              Built an agentic voice AI platform that runs 800+ screening calls
+              a week.
+            </li>
+            <li>
+              Built LLM evaluation and AI proctoring systems with OpenAI and
+              Anthropic Claude.
+            </li>
+          </ul>
         </article>
 
-        <article class="card">
-          <div class="card-head">
-            <h3>FakeBook</h3>
-            <span class="card-date">Mar 2023</span>
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <h3>Technical Intern</h3>
+              <p class="job-org">Team Geek Solutions · Remote</p>
+            </div>
+            <p class="job-date">Jan 2023 – Jul 2023</p>
           </div>
-          <p>A social media app with sign-in, friends, profiles and a timeline for posting, liking and commenting.</p>
-          <p class="tech">React · MUI · Node · Express · MongoDB</p>
-          <div class="card-links">
-            <a href="https://www.github.com/dhrvshrm/FakeBook" target="_blank" rel="noopener">Code ↗</a>
-          </div>
+          <ul class="job-points">
+            <li>
+              Built React UIs, a shared component library and micro-frontends
+              with Webpack Module Federation.
+            </li>
+            <li>
+              Wrote serverless backend functions with AWS Lambda and API
+              Gateway.
+            </li>
+          </ul>
         </article>
-      </div>
 
-      <h3 class="subhead">Writing</h3>
-      <a class="blog-link" href="https://medium.com/@dhr8v/understanding-javascript-call-stack-event-loop-and-asynchronous-patterns-c4a45f6c78fe"
-        target="_blank" rel="noopener">
-        JavaScript Global Execution Context, Call Stack, Event Loop and Asynchronous Patterns <span>↗</span>
-      </a>
-    </section>
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <h3>Web Development Intern</h3>
+              <p class="job-org">Samagra Foundation · Remote</p>
+            </div>
+            <p class="job-date">Jun 2021 – Aug 2021</p>
+          </div>
+          <ul class="job-points">
+            <li>
+              Built an internship portal and led a team of 5 interns on the
+              front end.
+            </li>
+          </ul>
+        </article>
 
-    <section id="education" class="section container">
-      <h2>Education</h2>
-      <div class="job-head">
-        <div>
-          <h3>B.Tech, Computer Science &amp; Engineering</h3>
-          <p class="job-org">IcfaiTech, The ICFAI University · Jaipur</p>
+        <p class="resume-note">
+          Full details are in my
+          <a
+            href="./assets/Dhruv_Sharma_Resume.pdf"
+            target="_blank"
+            rel="noopener"
+            >resume ↗</a
+          >
+        </p>
+      </section>
+
+      <section id="skills" class="section container">
+        <h2>Skills</h2>
+        <dl class="skills">
+          <div>
+            <dt>Languages</dt>
+            <dd>
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/html5/html5-original.svg"
+                  alt=""
+                />HTML</span
+              >
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/css3/css3-original.svg"
+                  alt=""
+                />CSS</span
+              >
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/javascript/javascript-original.svg"
+                  alt=""
+                />JavaScript</span
+              >
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/typescript/typescript-original.svg"
+                  alt=""
+                />TypeScript</span
+              >
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/python/python-original.svg"
+                  alt=""
+                />Python</span
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>Frontend</dt>
+            <dd>
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/react/react-original.svg"
+                  alt=""
+                />React</span
+              >
+              <span
+                ><img
+                  class="mono"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/nextjs/nextjs-original.svg"
+                  alt=""
+                />Next.js</span
+              >
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/materialui/materialui-original.svg"
+                  alt=""
+                />MUI</span
+              >
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/redux/redux-original.svg"
+                  alt=""
+                />Redux Toolkit</span
+              >
+              <span
+                ><img
+                  class="mono"
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/reactquery.svg"
+                  alt=""
+                />React Query</span
+              >
+              <span>Zustand</span>
+            </dd>
+          </div>
+          <div>
+            <dt>Backend &amp; Databases</dt>
+            <dd>
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/fastapi/fastapi-original.svg"
+                  alt=""
+                />FastAPI</span
+              >
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/mongodb/mongodb-original.svg"
+                  alt=""
+                />MongoDB</span
+              >
+              <span>SQL</span>
+            </dd>
+          </div>
+          <div>
+            <dt>Cloud &amp; DevOps</dt>
+            <dd>
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/docker/docker-original.svg"
+                  alt=""
+                />Docker</span
+              >
+              <span
+                ><img
+                  class="mono"
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/awslambda.svg"
+                  alt=""
+                />AWS Lambda</span
+              >
+              <span
+                ><img
+                  class="mono"
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/amazonapigateway.svg"
+                  alt=""
+                />API Gateway</span
+              >
+              <span
+                ><img
+                  class="mono"
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/amazonec2.svg"
+                  alt=""
+                />EC2</span
+              >
+              <span
+                ><img
+                  class="mono"
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/amazons3.svg"
+                  alt=""
+                />S3</span
+              >
+              <span
+                ><img
+                  class="mono"
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/amazoncloudwatch.svg"
+                  alt=""
+                />CloudWatch</span
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>AI &amp; LLMs</dt>
+            <dd>
+              <span
+                ><img
+                  class="mono"
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@11.0.0/icons/openai.svg"
+                  alt=""
+                />OpenAI</span
+              >
+              <span
+                ><img
+                  class="mono"
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@16.33.0/icons/anthropic.svg"
+                  alt=""
+                />Anthropic Claude</span
+              >
+              <span>Voice AI</span>
+              <span>LLM Evaluation</span>
+            </dd>
+          </div>
+          <div>
+            <dt>Tools</dt>
+            <dd>
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/git/git-original.svg"
+                  alt=""
+                />Git</span
+              >
+              <span
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/webpack/webpack-original.svg"
+                  alt=""
+                />Webpack</span
+              >
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="projects" class="section container">
+        <h2>Projects</h2>
+        <div class="projects">
+          <article class="card">
+            <div class="card-head">
+              <h3>Fitmind AI</h3>
+              <span class="card-date">Aug 2026</span>
+            </div>
+            <p>
+              A voice-first AI fitness coach that turns your mood and energy
+              into a daily workout plan, with live chat coaching and weekly
+              recaps.
+            </p>
+            <p class="tech">
+              React · TypeScript · FastAPI · MongoDB · Gemini · Groq
+            </p>
+            <div class="card-links">
+              <a
+                href="https://fitmind-ai-lyart.vercel.app/"
+                target="_blank"
+                rel="noopener"
+                >Live demo ↗</a
+              >
+              <a
+                href="https://github.com/dhrvshrm/fitmind-ai"
+                target="_blank"
+                rel="noopener"
+                >Code ↗</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h3>FakeBook</h3>
+              <span class="card-date">Mar 2023</span>
+            </div>
+            <p>
+              A social media app with sign-in, friends, profiles and a timeline
+              for posting, liking and commenting.
+            </p>
+            <p class="tech">React · MUI · Node · Express · MongoDB</p>
+            <div class="card-links">
+              <a
+                href="https://www.github.com/dhrvshrm/FakeBook"
+                target="_blank"
+                rel="noopener"
+                >Code ↗</a
+              >
+            </div>
+          </article>
         </div>
-        <p class="job-date">2019 – 2023</p>
+
+        <h3 class="subhead">Writing</h3>
+        <a
+          class="blog-link"
+          href="https://medium.com/@dhr8v/understanding-javascript-call-stack-event-loop-and-asynchronous-patterns-c4a45f6c78fe"
+          target="_blank"
+          rel="noopener"
+        >
+          JavaScript Global Execution Context, Call Stack, Event Loop and
+          Asynchronous Patterns <span>↗</span>
+        </a>
+      </section>
+
+      <section id="education" class="section container">
+        <h2>Education</h2>
+        <div class="job-head">
+          <div>
+            <h3>B.Tech, Computer Science &amp; Engineering</h3>
+            <p class="job-org">IcfaiTech, The ICFAI University · Jaipur</p>
+          </div>
+          <p class="job-date">2019 – 2023</p>
+        </div>
+      </section>
+
+      <section id="contact" class="section container contact">
+        <h2>Let's talk</h2>
+        <p class="lead">
+          I'm open to new opportunities. The quickest way to reach me is by
+          email.
+        </p>
+        <a class="btn btn-primary" href="mailto:shrmadhruv11@gmail.com"
+          >shrmadhruv11@gmail.com</a
+        >
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <p>© 2026 Dhruv Sharma</p>
+      <div class="social-links">
+        <a href="https://github.com/dhrvshrm/" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/dhrv-shrm/"
+          target="_blank"
+          rel="noopener"
+          >LinkedIn</a
+        >
+        <a href="https://medium.com/@dhr8v" target="_blank" rel="noopener"
+          >Medium</a
+        >
       </div>
-    </section>
+    </footer>
 
-    <section id="contact" class="section container contact">
-      <h2>Let's talk</h2>
-      <p class="lead">I'm open to new opportunities. The quickest way to reach me is by email.</p>
-      <a class="btn btn-primary" href="mailto:shrmadhruv11@gmail.com">shrmadhruv11@gmail.com</a>
-    </section>
-  </main>
-
-  <footer class="footer container">
-    <p>© 2026 Dhruv Sharma</p>
-    <div class="social-links">
-      <a href="https://github.com/dhrvshrm/" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/dhrv-shrm/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://medium.com/@dhr8v" target="_blank" rel="noopener">Medium</a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
