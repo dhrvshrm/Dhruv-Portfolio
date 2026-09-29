@@ -200,14 +200,26 @@ h1 {
 }
 
 .social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
     color: var(--muted);
-    border-bottom: 1px solid transparent;
-    transition: color 0.2s, border-color 0.2s;
+    transition: color 0.2s;
 }
 
 .social-links a:hover {
     color: var(--text);
-    border-color: var(--text);
+}
+
+.social-links svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.social-links.icons-only svg {
+    width: 18px;
+    height: 18px;
 }
 
 /* Sections */
