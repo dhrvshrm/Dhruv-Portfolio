@@ -242,34 +242,6 @@ strong {
     font-weight: 600;
 }
 
-.stats {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.stats li {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    background: var(--surface);
-}
-
-.stats strong {
-    font-size: 1.35rem;
-    letter-spacing: -0.02em;
-}
-
-.stats span {
-    font-size: 0.85rem;
-    color: var(--muted);
-    line-height: 1.4;
-}
-
 /* Experience */
 .job + .job {
     margin-top: 2.5rem;
@@ -308,6 +280,17 @@ strong {
     color: var(--subtle);
 }
 
+.resume-note {
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.resume-note a {
+    color: var(--accent);
+    font-weight: 500;
+}
+
 /* Skills */
 .skills {
     display: flex;
@@ -334,12 +317,26 @@ strong {
 }
 
 .skills dd span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
     font-size: 0.85rem;
-    padding: 0.2rem 0.65rem;
+    padding: 0.3rem 0.7rem;
     border-radius: 999px;
     background: var(--surface);
     border: 1px solid var(--border);
     color: var(--muted);
+}
+
+.skills dd img {
+    width: 16px;
+    height: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .skills dd img.mono {
+        filter: invert(1);
+    }
 }
 
 /* Projects */
@@ -502,10 +499,6 @@ strong {
 
     .hero-text {
         font-size: 1rem;
-    }
-
-    .stats {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .job-head {
